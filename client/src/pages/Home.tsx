@@ -127,7 +127,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex justify-center">
-              <img src="/benefits-illustration.png" alt="メリット" className="w-4/5 md:w-full max-w-md rounded-lg" />
+              <img src="/benefits-illustration-refined.png" alt="メリット" className="w-4/5 md:w-full max-w-md rounded-lg" />
             </div>
           </div>
 
@@ -212,7 +212,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="flex justify-center order-2 md:order-1">
-              <img src="/features-illustration.png" alt="特徴" className="w-4/5 md:w-full max-w-md rounded-lg" />
+              <img src="/features-illustration-refined.png" alt="特徴" className="w-4/5 md:w-full max-w-md rounded-lg" />
             </div>
             <div className="order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -413,7 +413,7 @@ export default function HomePage() {
               </h2>
             </div>
             <div className="flex justify-center">
-              <img src="/target-illustration.png" alt="おすすめ" className="w-4/5 md:w-full max-w-md rounded-lg" />
+              <img src="/target-illustration-refined.png" alt="おすすめ" className="w-4/5 md:w-full max-w-md rounded-lg" />
             </div>
           </div>
 
@@ -524,7 +524,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="flex justify-center order-2 md:order-1">
-              <img src="/support-illustration.png" alt="サポート" className="w-4/5 md:w-full max-w-md rounded-lg" />
+              <img src="/support-illustration-refined.png" alt="サポート" className="w-4/5 md:w-full max-w-md rounded-lg" />
             </div>
             <div className="order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
