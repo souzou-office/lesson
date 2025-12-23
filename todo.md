@@ -129,3 +129,9 @@
 ## ヒーロー画像拡大（2025-11-06）
 - [x] ヒーローセクションの画像をmax-w-4xlに拡大
 
+
+## イラスト高品質化（2025-11-06）
+- [x] benefits-illustration.pngを高品質版に再生成
+- [x] features-illustration.pngを高品質版に再生成
+- [x] target-illustration.pngを高品質版に再生成
+- [x] support-illustration-clean.pngを高品質版に再生成
