@@ -135,3 +135,6 @@
 - [x] features-illustration.pngを高品質版に再生成
 - [x] target-illustration.pngを高品質版に再生成
 - [x] support-illustration-clean.pngを高品質版に再生成
+
+## イラスト修正（2025-11-06） - フラットスタイルへの復帰
+- [x] Home.tsxの画像パスを以前のフラットなイラストに戻す
