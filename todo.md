@@ -145,3 +145,13 @@
 - [ ] target-illustration-refined.pngを生成（洗練されたフラットスタイル）
 - [ ] support-illustration-refined.pngを生成（洗練されたフラットスタイル）
 - [ ] Home.tsxの画像パスを更新
+
+## レイアウト刷新（2025-11-06） - 横長バナー形式
+- [x] benefits-banner.pngを生成（横長、「受講修了で得られるメリット」）
+- [x] features-banner.pngを生成（横長、「オンライン学習 & 柔軟性」）
+- [x] target-banner.pngを生成（横長、「こんな方におすすめ：忙しい起業家」）
+- [x] support-banner.pngを生成（横長、「受講後のサポートサービス」）
+- [x] Home.tsx修正：Benefitsセクションのレイアウト変更（画像全幅、見出し削除）
+- [x] Home.tsx修正：Featuresセクションのレイアウト変更（画像全幅、見出し削除）
+- [x] Home.tsx修正：Targetセクションのレイアウト変更（画像全幅、見出し削除）
+- [x] Home.tsx修正：Supportセクションのレイアウト変更（画像全幅、見出し削除）

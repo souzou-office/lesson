@@ -117,18 +117,9 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-20 -mr-32 -mt-32"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-200 rounded-full opacity-20 -ml-48 -mb-48"></div>
         <div className="container max-w-6xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                受講修了で得られるメリット
-              </h2>
-              <p className="text-lg text-gray-600">
-                受講完了後、福岡市から発行される証明書で以下のメリットが受けられます
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <img src="/benefits-illustration-refined.png" alt="メリット" className="w-4/5 md:w-full max-w-md rounded-lg" />
-            </div>
+          {/* Banner Image Header */}
+          <div className="flex justify-center mb-12">
+            <img src="/benefits-banner.png" alt="受講修了で得られるメリット" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -210,15 +201,9 @@ export default function HomePage() {
         <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-200 rounded-full opacity-20 -ml-48 -mt-48"></div>
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-20 -mr-32 -mb-32"></div>
         <div className="container max-w-6xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-            <div className="flex justify-center order-2 md:order-1">
-              <img src="/features-illustration-refined.png" alt="特徴" className="w-4/5 md:w-full max-w-md rounded-lg" />
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                当サービスの3つの特徴
-              </h2>
-            </div>
+          {/* Banner Image Header */}
+          <div className="flex justify-center mb-12">
+            <img src="/features-banner.png" alt="オンライン学習 & 柔軟性" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -233,29 +218,30 @@ export default function HomePage() {
 
             {/* Feature 2 */}
             <div className="text-center p-6 bg-white rounded-lg hover:shadow-lg transition">
-              <div className="flex justify-center mb-4"><Zap className="h-12 w-12 text-yellow-500" /></div>
-              <h3 className="text-xl font-bold mb-3">6時間で完結</h3>
+              <div className="flex justify-center mb-4"><Clock className="h-12 w-12 text-green-600" /></div>
+              <h3 className="text-xl font-bold mb-3">最短1日で修了可能</h3>
               <p className="text-gray-600">
-                通常12時間かかる内容を6時間に凝縮。フィラーを除去した編集済み動画で時間効率を最大化。
+                全4回の講座（合計約6時間）を自分のペースで進められます。週末にまとめて受講することも可能です。
               </p>
             </div>
 
             {/* Feature 3 */}
             <div className="text-center p-6 bg-white rounded-lg hover:shadow-lg transition">
-              <div className="flex justify-center mb-4"><Users className="h-12 w-12 text-purple-600" /></div>
-              <h3 className="text-xl font-bold mb-3">経験豊富な講師陣</h3>
+              <div className="flex justify-center mb-4"><Users className="h-12 w-12 text-orange-500" /></div>
+              <h3 className="text-xl font-bold mb-3">専門家による質の高い講義</h3>
               <p className="text-gray-600">
-                特定創業支援事業の経験が豊富な講師たちによる、質の高い実践的な講義内容をお届けします。
+                創業支援の経験豊富な専門家が講師を担当。実務に即した具体的な知識が身につきます。
               </p>
             </div>
           </div>
-
-          <div className="text-center mt-12">
+          
+          <div className="flex justify-center mt-12">
             <Button
               onClick={handleContactClick}
-              className="btn-secondary text-base md:text-xl px-8 md:px-12 py-5 md:py-7"
+              className="btn-primary text-base md:text-xl px-8 md:px-12 py-5 md:py-7"
             >
               LINEで受講を申し込む
+              <ArrowRight className="ml-2 h-5 w-5 md:h-6 md:w-6" />
             </Button>
           </div>
         </div>
@@ -265,138 +251,113 @@ export default function HomePage() {
       <section id="curriculum" className="section-padding bg-white">
         <div className="container max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            講座内容（全6時間）
+            講座内容（全4章）
           </h2>
-
-          <div className="space-y-4">
+          
+          <div className="space-y-6">
             {/* Chapter 1 */}
-            <Card className="hover:shadow-lg transition">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-xl">第1章</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground mt-2">
-                      売上のつくり方とリスク対策の基本
-                    </CardDescription>
-                  </div>
-                  <span className="text-sm font-semibold bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
-                    約90分
-                  </span>
-                </div>
-              </CardHeader>
-              <CardContent>
+            <div className="flex flex-col md:flex-row gap-6 p-6 border rounded-lg hover:bg-gray-50 transition">
+              <div className="md:w-1/4 flex flex-col items-center justify-center bg-blue-100 rounded-lg p-4">
+                <span className="text-blue-800 font-bold text-lg">第1章</span>
+                <span className="text-2xl font-bold mt-2">経営</span>
+                <span className="text-sm text-gray-600 mt-2">約120分</span>
+              </div>
+              <div className="md:w-3/4">
+                <h3 className="text-xl font-bold mb-3">経営の基本と事業計画</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>顧客ニーズを踏まえた商品・サービス開発</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>経営者の心構えとリーダーシップ</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>顧客とつながる販路開拓</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>事業計画書の作成方法とポイント</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>法律・制度を知ってリスク管理を図ろう</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>ビジネスモデルの構築</span>
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Chapter 2 */}
-            <Card className="hover:shadow-lg transition">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-xl">第2章</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground mt-2">
-                      導線設計と販売促進の実践
-                    </CardDescription>
-                  </div>
-                  <span className="text-sm font-semibold bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
-                    約50分
-                  </span>
-                </div>
-              </CardHeader>
-              <CardContent>
+            <div className="flex flex-col md:flex-row gap-6 p-6 border rounded-lg hover:bg-gray-50 transition">
+              <div className="md:w-1/4 flex flex-col items-center justify-center bg-green-100 rounded-lg p-4">
+                <span className="text-green-800 font-bold text-lg">第2章</span>
+                <span className="text-2xl font-bold mt-2">財務</span>
+                <span className="text-sm text-gray-600 mt-2">約60分</span>
+              </div>
+              <div className="md:w-3/4">
+                <h3 className="text-xl font-bold mb-3">資金調達と収支計画</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>導線を考えた販売促進</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>創業時の資金調達方法</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>効果的な販促設計の実践方法</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>収支計画の立て方と管理</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>税務・会計の基礎知識</span>
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Chapter 3 */}
-            <Card className="hover:shadow-lg transition">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-xl">第3章</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground mt-2">
-                      ビジネスモデルと売上計画の設計
-                    </CardDescription>
-                  </div>
-                  <span className="text-sm font-semibold bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
-                    120分
-                  </span>
-                </div>
-              </CardHeader>
-              <CardContent>
+            <div className="flex flex-col md:flex-row gap-6 p-6 border rounded-lg hover:bg-gray-50 transition">
+              <div className="md:w-1/4 flex flex-col items-center justify-center bg-orange-100 rounded-lg p-4">
+                <span className="text-orange-800 font-bold text-lg">第3章</span>
+                <span className="text-2xl font-bold mt-2">人材育成</span>
+                <span className="text-sm text-gray-600 mt-2">約30分</span>
+              </div>
+              <div className="md:w-3/4">
+                <h3 className="text-xl font-bold mb-3">組織づくりと人材マネジメント</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>夢を実現するビジネスモデル構築</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>採用の基本と法的手続き</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>売上計画・利益計画・資金計画</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>人材育成と評価制度</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>労務管理の基礎</span>
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* Chapter 4 */}
-            <Card className="hover:shadow-lg transition">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-xl">第4章</CardTitle>
-                    <CardDescription className="text-base font-semibold text-foreground mt-2">
-                      経営者のための会計・税務の基本
-                    </CardDescription>
-                  </div>
-                  <span className="text-sm font-semibold bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
-                    60分
-                  </span>
-                </div>
-              </CardHeader>
-              <CardContent>
+            <div className="flex flex-col md:flex-row gap-6 p-6 border rounded-lg hover:bg-gray-50 transition">
+              <div className="md:w-1/4 flex flex-col items-center justify-center bg-purple-100 rounded-lg p-4">
+                <span className="text-purple-800 font-bold text-lg">第4章</span>
+                <span className="text-2xl font-bold mt-2">販路拡大</span>
+                <span className="text-sm text-gray-600 mt-2">約30分</span>
+              </div>
+              <div className="md:w-3/4">
+                <h3 className="text-xl font-bold mb-3">マーケティングと営業戦略</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>経営者のための会計・税務の基礎知識</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>ターゲット設定と市場分析</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>実務で役立つ会計・税務のポイント</span>
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>効果的なプロモーション手法</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
+                    <span>Webマーケティングの活用</span>
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button
-              onClick={handleContactClick}
-              className="btn-secondary text-base md:text-xl px-8 md:px-12 py-5 md:py-7"
-            >
-              LINEで受講を申し込む
-            </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -406,15 +367,9 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-green-200 rounded-full opacity-20 -mr-48 -mt-48"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-20 -ml-32 -mb-32"></div>
         <div className="container max-w-6xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                こんな方におすすめ
-              </h2>
-            </div>
-            <div className="flex justify-center">
-              <img src="/target-illustration-refined.png" alt="おすすめ" className="w-4/5 md:w-full max-w-md rounded-lg" />
-            </div>
+          {/* Banner Image Header */}
+          <div className="flex justify-center mb-12">
+            <img src="/target-banner.png" alt="こんな方におすすめ：忙しい起業家" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -477,7 +432,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-lg font-bold mb-3 text-center">情報入力</h3>
               <p className="text-sm text-gray-700 text-center">
-                粗简単なフォームに必要事項を入力
+                簡単なフォームに必要事項を入力
               </p>
             </div>
 
@@ -522,18 +477,9 @@ export default function HomePage() {
         <div className="absolute top-0 left-0 w-96 h-96 bg-purple-200 rounded-full opacity-20 -ml-48 -mt-48"></div>
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-20 -mr-32 -mb-32"></div>
         <div className="container max-w-6xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-            <div className="flex justify-center order-2 md:order-1">
-              <img src="/support-illustration-refined.png" alt="サポート" className="w-4/5 md:w-full max-w-md rounded-lg" />
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                受講後のサポートサービス
-              </h2>
-              <p className="text-lg text-gray-600">
-                創業支援受講後も、あなたの起業をトータルサポートします
-              </p>
-            </div>
+          {/* Banner Image Header */}
+          <div className="flex justify-center mb-12">
+            <img src="/support-banner.png" alt="受講後のサポートサービス" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -650,4 +596,3 @@ export default function HomePage() {
     </div>
   );
 }
-
