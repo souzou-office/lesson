@@ -169,3 +169,8 @@
 - [x] target-banner-simple.pngを生成（要素削減、中央集中）
 - [x] support-banner-simple.pngを生成（要素削減、中央集中）
 - [x] Home.tsxの画像パスを更新
+
+## レイアウト統一（2025-11-06） - Aboutセクション
+- [x] about-banner-simple.pngを生成（要素削減、中央集中、「スマート創業支援講座とは」）
+- [x] Pythonでabout-banner-simple.pngをトリミング
+- [x] Home.tsxのAboutセクション見出しを画像に置換

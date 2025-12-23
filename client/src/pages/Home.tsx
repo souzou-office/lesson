@@ -98,9 +98,10 @@ export default function HomePage() {
       {/* About Section */}
       <section id="about" className="section-padding bg-white">
         <div className="container max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            「スマート創業支援講座」とは
-          </h2>
+          {/* Banner Image Header */}
+          <div className="flex justify-center mb-12">
+            <img src="/about-banner-simple.png" alt="スマート創業支援講座とは" className="w-full max-w-4xl rounded-lg shadow-sm" />
+          </div>
           <div style={{backgroundColor: '#f0f4ff'}} className="p-8 md:p-12 rounded-lg border-l-4 border-blue-600">
             <p className="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
               スマート創業支援講座は、福岡市が実施する「特定創業支援等事業」として認定された創業支援講座です。
