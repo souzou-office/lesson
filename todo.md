@@ -174,3 +174,12 @@
 - [x] about-banner-simple.pngを生成（要素削減、中央集中、「スマート創業支援講座とは」）
 - [x] Pythonでabout-banner-simple.pngをトリミング
 - [x] Home.tsxのAboutセクション見出しを画像に置換
+
+## レイアウト改善（2025-11-06） - 意味のあるイラスト付きスリムバナー
+- [x] benefits-banner-illust.pngを生成（メリットを享受する人のイラスト）
+- [x] features-banner-illust.pngを生成（PCで学習する人のイラスト）
+- [x] target-banner-illust.pngを生成（忙しい起業家のイラスト）
+- [x] support-banner-illust.pngを生成（サポートを受ける人のイラスト）
+- [x] about-banner-illust.pngを生成（発見/学習する人のイラスト）
+- [x] Pythonで上記画像をトリミング
+- [x] Home.tsxの画像パスを更新

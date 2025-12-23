@@ -100,7 +100,7 @@ export default function HomePage() {
         <div className="container max-w-5xl mx-auto">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/about-banner-simple.png" alt="スマート創業支援講座とは" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/about-banner-illust.png" alt="スマート創業支援講座とは" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
           <div style={{backgroundColor: '#f0f4ff'}} className="p-8 md:p-12 rounded-lg border-l-4 border-blue-600">
             <p className="text-base md:text-lg text-gray-800 leading-relaxed mb-4">
@@ -120,7 +120,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/benefits-banner-simple.png" alt="受講修了で得られるメリット" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/benefits-banner-illust.png" alt="受講修了で得られるメリット" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -204,7 +204,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/features-banner-simple.png" alt="オンライン学習 & 柔軟性" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/features-banner-illust.png" alt="オンライン学習 & 柔軟性" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -370,7 +370,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/target-banner-simple.png" alt="こんな方におすすめ：忙しい起業家" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/target-banner-illust.png" alt="こんな方におすすめ：忙しい起業家" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -480,7 +480,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/support-banner-simple.png" alt="受講後のサポートサービス" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/support-banner-illust.png" alt="受講後のサポートサービス" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
