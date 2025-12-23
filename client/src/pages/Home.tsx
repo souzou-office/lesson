@@ -119,7 +119,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/benefits-banner.png" alt="受講修了で得られるメリット" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/benefits-banner-slim.png" alt="受講修了で得られるメリット" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -203,7 +203,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/features-banner.png" alt="オンライン学習 & 柔軟性" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/features-banner-slim.png" alt="オンライン学習 & 柔軟性" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -369,7 +369,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/target-banner.png" alt="こんな方におすすめ：忙しい起業家" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/target-banner-slim.png" alt="こんな方におすすめ：忙しい起業家" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -479,7 +479,7 @@ export default function HomePage() {
         <div className="container max-w-6xl mx-auto relative z-10">
           {/* Banner Image Header */}
           <div className="flex justify-center mb-12">
-            <img src="/support-banner.png" alt="受講後のサポートサービス" className="w-full max-w-4xl rounded-lg shadow-sm" />
+            <img src="/support-banner-slim.png" alt="受講後のサポートサービス" className="w-full max-w-4xl rounded-lg shadow-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
