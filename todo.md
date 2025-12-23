@@ -162,3 +162,10 @@
 - [x] target-banner-slim.pngを生成（超横長、主張控えめ）
 - [x] support-banner-slim.pngを生成（超横長、主張控えめ）
 - [x] Home.tsxの画像パスを更新
+
+## レイアウト改善（2025-11-06） - シンプルスリムバナー形式
+- [x] benefits-banner-simple.pngを生成（要素削減、中央集中）
+- [x] features-banner-simple.pngを生成（要素削減、中央集中）
+- [x] target-banner-simple.pngを生成（要素削減、中央集中）
+- [x] support-banner-simple.pngを生成（要素削減、中央集中）
+- [x] Home.tsxの画像パスを更新
