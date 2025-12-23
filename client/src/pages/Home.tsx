@@ -554,42 +554,9 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-12">
+      <footer className="bg-gray-900 text-gray-300 py-8">
         <div className="container max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="font-bold text-white mb-4">司法書士法人そうぞう</h3>
-              <p className="text-sm">
-                創業支援と企業法務のプロフェッショナル
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">サービス</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#about" className="hover:text-white transition">特定創業支援事業</a></li>
-                <li><a href="#support" className="hover:text-white transition">会社設立サポート</a></li>
-                <li><a href="#support" className="hover:text-white transition">記帳代行サービス</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">情報</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">プライバシーポリシー</a></li>
-                <li><a href="#" className="hover:text-white transition">利用規約</a></li>
-                <li><a href="#" className="hover:text-white transition">お問い合わせ</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">フォロー</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition">Twitter</a></li>
-                <li><a href="#" className="hover:text-white transition">Facebook</a></li>
-                <li><a href="#" className="hover:text-white transition">LinkedIn</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 text-center text-sm">
+          <div className="text-center text-sm">
             <p>© 2025 司法書士法人そうぞう. All rights reserved.</p>
           </div>
         </div>
